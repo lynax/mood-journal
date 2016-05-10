@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/listContainer" android:layout_gravity="center_horizontal" android:layout_weight="8">
+        <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/list"
+                android:layout_gravity="center_horizontal"
+                android:divider="#ffffff"
+                android:dividerHeight="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_gravity="center_horizontal" android:layout_weight="1">
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Prev"
+                android:id="@+id/prev" android:layout_weight="1" android:onClick="getPrev"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Next"
+                android:id="@+id/next" android:layout_weight="1" android:onClick="getNext"/>
+    </LinearLayout>
+</LinearLayout>

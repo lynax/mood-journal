@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="Good Event"
+                android:id="@+id/good_event"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:background="#ffffff" android:onClick="addGoodEntry"
+                android:textColor="#000000"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="Bad Event"
+                android:id="@+id/bad_event"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:background="#000000" android:textColor="#ffffff"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="Past Entries"
+                android:id="@+id/list_entry"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="#25a194" android:textColor="#ffffff" android:onClick="listEntry"/>
+    </LinearLayout>
+</LinearLayout>
+

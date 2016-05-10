@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_gravity="right" android:background="#eeeeee"
+            android:id="@+id/main">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:id="@+id/date_today" android:layout_gravity="center_horizontal" android:textSize="@dimen/h1"
+                android:textColor="#ffffff" android:background="#57b17f" android:gravity="center"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/text" android:layout_gravity="center_horizontal"
+                android:hint="Start writing..."
+                android:textColor="#666666"
+                android:textColorHint="#666666"
+                android:layout_weight="1" android:gravity="top"
+                android:background="#eeeeee" android:padding="10dp"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:id="@+id/submit" android:layout_gravity="center_horizontal" android:background="#d8a569"
+                android:textColor="#ffffff" android:onClick="addEntry"/>
+    </LinearLayout>
+</LinearLayout>
